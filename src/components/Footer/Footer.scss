@@ -1,0 +1,16 @@
+.footer {
+
+    &__content {
+        padding: 15px 0;
+        border-top: 1px solid #797979;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 1.6rem;
+
+        li {
+            display: inline-block;
+            margin-left: 10px;
+        }
+    }
+}

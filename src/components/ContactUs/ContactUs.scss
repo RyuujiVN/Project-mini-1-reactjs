@@ -1,0 +1,97 @@
+.contact {
+    padding: 60px;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 60px;
+        color: #676767;
+
+        &--left {
+            width: 48%;
+
+            h3 {
+                font-size: 3rem;
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                margin-bottom: 20px;
+                color: #000F38;
+
+                img {
+                    width: 40px;
+                }
+            }
+
+            p {
+                font-size: 1.6rem;
+                max-width: 450px;
+            }
+
+            li {
+                display: flex;
+                align-items: center;
+                margin: 10px 0;
+                font-size: 1.6rem;
+
+                img {
+                    width: 20px;
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        &--right {
+            width: 48%;
+            font-size: 1.6rem;
+
+            form {
+
+                input,
+                textarea {
+                    width: 100%;
+                    border: none;
+                    border-radius: 10px;
+                    margin-top: 5px;
+                    margin-bottom: 10px;
+                    padding: 15px 10px;
+                    font-size: 1.6rem;
+                    background: #EBECFE;
+                    outline: 0;
+                    resize: none;
+                }
+
+                button {
+                    position: relative;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    background: var(--color-one);
+                    max-width: 250px;
+                    font-size: 1.6rem;
+                    margin-top: 10px;
+                    color: #fff;
+
+
+                    img {
+                        width: 20px;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .contact {
+
+        &__content {
+            flex-wrap: wrap;
+
+            &--left,
+            &--right {
+                width: 100%;
+            }
+        }
+    }
+}
